@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tracker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!---fonts--->
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+  <!---bootstrap-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<!---custom--->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
+</head>
+<body>
+  <!---navbar--->
+<nav id="nav-bar">
+  <a href="#">Tracker</a>
+</nav>
+<br>
+<br>
+<br>
+<br>
+
+
+<!---fullScreenButtton--->
+<button style="float: right;"  id="fullscrenn" onclick="toggleFullScreen()">
+  <img width="20px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Fullscreen_icon_logo_white.svg/1200px-Fullscreen_icon_logo_white.svg.png">
+</button>
+<br>
+<br>
+
+<!---mainContainer--->
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <h3 class="text-primary">Total Positive</h3>
+      <div class="flex-container-box primary">
+    {{ total_positive }}
+      </div>
+    </div>
+    <div class="col-sm">
+      <h3 class="text-danger">Total Deaths</h3>
+      <div class="flex-container-box danger">
+    {{ total_deaths }}
+      </div>
+    </div>
+    <div class="col-sm">
+      <h3 class="text-okay">Total Recovred</h3>
+      <div class="flex-container-box okay">
+    {{ total_recv }}
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

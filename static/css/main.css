@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+    background: #262626  !Important;
+  }
+  #nav-bar{
+    background: #212124; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 5px 0 rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    font-family: Fredoka One;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+  }
+  #nav-bar a{
+    text-decoration: none;
+    color: #fff;
+  }
+  #fullscrenn{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+  }
+  .flex-container-box {
+    background-color: #242424;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    outline:none;
+      border: 1px solid #ff005d; 
+      /* create a BIG glow */
+      box-shadow: 0px 0px 10px #ff005d; 
+      -moz-box-shadow: 0px 0px 10px #ff005d;
+      -webkit-box-shadow: 0px 0px 10px #ff005d;  
+  }
+  .flex-container-box:hover{
+    transform: scale(1.1);
+  }
+  .danger{
+    color: #ff005d;
+    border: 1px solid #ff005d; 
+      /* create a BIG glow */
+      box-shadow: 0px 0px 10px #ff005d; 
+      -moz-box-shadow: 0px 0px 10px #ff005d;
+      -webkit-box-shadow: 0px 0px 10px #ff005d;  
+  }
+  .primary{
+    color: #4195fc;
+    border: 1px solid #4195fc; 
+      /* create a BIG glow */
+      box-shadow: 0px 0px 10px #4195fc; 
+      -moz-box-shadow: 0px 0px 10px #4195fc;
+      -webkit-box-shadow: 0px 0px 10px #4195fc;  
+  }
+  .okay{
+    color: #00ff6a;
+    border: 1px solid #00ff6a; 
+      /* create a BIG glow */
+      box-shadow: 0px 0px 10px #00ff6a; 
+      -moz-box-shadow: 0px 0px 10px #00ff6a;
+      -webkit-box-shadow: 0px 0px 10px #00ff6a;  
+  }
+  
+  
+  .text-primary{
+    color: #4195fc;
+  }
+  .text-danger{
+    color: #4195fc;
+  }
+  .text-okay{
+    color: #00ff6a;
+  }
+  .container{
+    text-align: center;
+  }
+  @media only screen and (max-width: 600px) {
+    .flex-container-box{
+      width: 98%;
+    }
+    .flex-container-box:hover{
+      transform: scale(1.05);
+    }
+  }
