@@ -9,9 +9,6 @@ def get_data():
     url = "https://api.apify.com/v2/key-value-stores/toDWvRj1JpTXiM8FF/records/LATEST?disableRedirect=true"
     r = requests.get(url)
     y = json.loads(r.text)
-    print("ACTIVE CASES :",y["activeCases"])
-    print("Recovered CASES :",y["recovered"])
-    print("Death CASES :",y["deaths"])
     return y["activeCases"],y["recovered"],y["deaths"]
 
 @app.route('/')
